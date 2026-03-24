@@ -1,28 +1,9 @@
 package edu.ifam.dra.greeting;
 
-public class Greeting {
-	private long id;
-	private String nome;
-	
-	
-	public Greeting(long id, String nome) {
-		super();
-		this.id = id;
-		this.nome = nome;
-	}
-	
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-	
+/**
+ * Record que representa os dados da mensagem de saudação.
+ * Records gerenciam automaticamente os construtores, getters (nome do campo),
+ * equals, hashCode e toString.
+ */
+public record Greeting(long id, String nome) {
 }
