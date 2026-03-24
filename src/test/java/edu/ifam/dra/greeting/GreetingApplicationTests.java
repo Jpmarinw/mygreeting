@@ -23,14 +23,14 @@ class GreetingApplicationTests {
 
     @Test
     void shouldReturnDefaultMessage() throws Exception {
-        mockMvc.perform(get("/greeting"))
+        mockMvc.perform(get("/api/v1/greeting"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.nome").value("Hello, World!"));
     }
 
     @Test
     void shouldReturnCustomMessage() throws Exception {
-        mockMvc.perform(get("/greeting").param("name", "Spring"))
+        mockMvc.perform(get("/api/v1/greeting").param("name", "Spring"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.nome").value("Hello, Spring!"));
     }
