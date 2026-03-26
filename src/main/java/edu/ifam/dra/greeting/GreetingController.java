@@ -16,7 +16,7 @@ import jakarta.validation.constraints.Size;
 @RestController
 @RequestMapping("/api/v1")
 @Validated
-@Tag(name = "Saudações", description = "Endpoints de exemplo para gerar mensagens de saudação.")
+@Tag(name = "Saudações API", description = "Endpoints de exemplo para gerar mensagens de saudação.")
 public class GreetingController {
 
     private final GreetingService greetingService;
