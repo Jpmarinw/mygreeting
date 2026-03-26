@@ -1,4 +1,4 @@
-# MyGreeting API
+# MyGreeting API 🚀
 
 Uma API de saudação simples e moderna feita com **Spring Boot 3** e **Java 17**.
 
