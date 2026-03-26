@@ -14,7 +14,7 @@ public class GreetingService {
     private final AtomicLong counter = new AtomicLong();
 
     /**
-     * Gera uma nova saudação e incrementa dinamicamente a contagem.
+     * Gera uma nova saudação e incrementa dinamicamente a contagem. (Adicionado via automação de teste)
      *
      * @param name Nome do usuário a ser saudado.
      * @return Retorna o objeto record Greeting com o ID mais recente.
